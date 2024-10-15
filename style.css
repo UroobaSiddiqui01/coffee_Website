@@ -392,3 +392,150 @@ footer {
         flex-direction: column;
     }
 }
+/* Existing Styles Above */
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    /* Tablet and small laptop adjustments */
+    .header {
+        padding: 15px 30px;
+    }
+
+    .home-content {
+        padding: 20px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        max-width: 100%;
+    }
+
+    .about-flex-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-flex-container p {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+
+    .contact h2 {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile adjustments */
+    .header {
+        flex-direction: column;
+        padding: 10px 20px;
+        align-items: flex-start;
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .cta {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .home h2 {
+        font-size: 2em;
+    }
+
+    .home p {
+        font-size: 1em;
+    }
+
+    .about h2 {
+        font-size: 2em;
+    }
+
+    .about-flex-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        height: auto;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+
+    .contact h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Small mobile adjustments */
+    .header {
+        padding: 10px 15px;
+    }
+
+    .home h2 {
+        font-size: 1.8em;
+    }
+
+    .home p {
+        font-size: 0.9em;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .feature {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .about h2 {
+        font-size: 1.8em;
+    }
+
+    .contact h2 {
+        font-size: 1.5em;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9em;
+    }
+}
