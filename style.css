@@ -539,3 +539,111 @@ footer {
         font-size: 0.9em;
     }
 }
+/* Your existing CSS styles */
+
+/* Add this to handle the hamburger menu */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1e1e1e;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links li {
+    margin: 0 10px;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #ff9800;
+}
+
+/* Media Queries for Burger Menu */
+@media (max-width: 768px) {
+    .header {
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    nav .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #1e1e1e;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .burger.active div:nth-child(1) {
+        transform: rotate(45deg) translateY(6px);
+    }
+
+    .burger.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active div:nth-child(3) {
+        transform: rotate(-45deg) translateY(-6px);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* Responsive adjustments for about and menu section */
+@media (max-width: 768px) {
+    .about-flex-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

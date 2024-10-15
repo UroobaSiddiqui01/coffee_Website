@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <a href="#" class="logo">Coffee shop <i class="fas fa-mug-hot"></i></a>
-
+       
         <nav>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -19,6 +19,11 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+    </div>
         <a href="#order" class="cta">Order Now</a>
     </header>
     
@@ -119,6 +124,15 @@
             </ul>
         </div>
     </footer>
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+    
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    </script>
     
 
   
