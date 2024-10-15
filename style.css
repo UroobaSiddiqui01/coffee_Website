@@ -1,3 +1,4 @@
+/* Body styling */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -5,6 +6,7 @@ body {
     color: #fff;
 }
 
+/* Header styling */
 .header {
     display: flex;
     justify-content: space-between;
@@ -13,15 +15,9 @@ body {
     background-color: #1e1e1e;
     position: fixed;
     width: 100%;
-    top: 0; 
+    top: 0;
     z-index: 1000;
 }
-
-section {
-    padding-top: 80px; 
-}
-
-
 .logo {
     color: #fff;
      font-size: 1.8rem;
@@ -34,6 +30,23 @@ section {
 .logo:hover {
     color: sienna;
   }
+
+/* Burger icon */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+/* Navigation Links */
 nav .nav-links {
     list-style: none;
     display: flex;
@@ -55,6 +68,7 @@ nav .nav-links a:hover {
     color: #ff9800;
 }
 
+/* CTA Button */
 .cta {
     text-decoration: none;
     color: #fff;
@@ -66,22 +80,24 @@ nav .nav-links a:hover {
 }
 
 .cta:hover {
-    background-color:#ff9800;
+    background-color: #ff9800;
 }
+
+/* Home section */
 .home {
     padding: 50px 20px;
     background: url(image/imgs\ home.jpg) no-repeat center center;
     background-size: cover;
     text-align: center;
-    min-height: 400px; 
-    color: #fff; 
+    min-height: 400px;
+    color: #fff;
 }
 
 .home-content {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px; 
-    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     margin-top: 60px;
 }
@@ -96,7 +112,7 @@ nav .nav-links a:hover {
     margin-bottom: 30px;
 }
 
-
+/* Features section */
 .features {
     display: flex;
     justify-content: space-around;
@@ -112,9 +128,11 @@ nav .nav-links a:hover {
     min-width: 200px;
     max-width: 300px;
 }
-.feature:hover{
+
+.feature:hover {
     background-color: #121212;
 }
+
 .feature h3 {
     font-size: 1.5em;
     margin-top: 0;
@@ -124,6 +142,8 @@ nav .nav-links a:hover {
     font-size: 1em;
     margin-bottom: 0;
 }
+
+/* Featured Products */
 .featured-products {
     padding: 50px 20px;
     background-color: #1e1e1e;
@@ -135,12 +155,13 @@ nav .nav-links a:hover {
     margin-bottom: 20px;
 }
 
-
-#menu{
+/* Menu section */
+#menu {
     padding: 20px;
     background-color: #1e1e1e;
     text-align: center;
     height: 600px;
+    margin-bottom: 50px; /* Spacing after the Menu section */
 }
 
 .menu-container {
@@ -149,7 +170,6 @@ nav .nav-links a:hover {
     justify-content: center;
     gap: 20px;
     margin-bottom: 70px;
-
 }
 
 .menu-item {
@@ -158,10 +178,10 @@ nav .nav-links a:hover {
     border-radius: 5px;
     padding: 15px;
     width: 200px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
+
 .menu-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -169,34 +189,28 @@ nav .nav-links a:hover {
 
 .menu-item h3 {
     margin-top: 0;
-    cursor: pointer;   
+    cursor: pointer;
 }
+
 .price {
     display: block;
     margin-top: 10px;
     font-weight: bold;
     cursor: pointer;
 }
-.price:hover{
+
+.price:hover {
     color: sienna;
 }
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
 
+/* About section */
 .about {
     background-color: #1e1e1e;
     padding: 80px 0;
     text-align: center;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 50px; /* Space after About section */
 }
 
 .about-content {
@@ -238,41 +252,21 @@ footer {
     height: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .about-image:hover img {
     border-radius: 10rem;
     transform: scale(1.05);
-  }
-  .about-content h3 {
-    transition: text-shadow 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .about-content:hover h3 {
+}
+
+.about-content:hover h3 {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-  }
-  
-  .about-content {
-    transition: transform 0.3s ease;
-  }
-  
-  .about-content:hover {
+}
+
+.about-content:hover {
     transform: translateY(-20px);
-  }
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.06);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  .about .row .image:hover img {
-    animation: pulse 1s infinite;
-  }
-  
+}
+
+/* Contact section */
 .contact {
     background-color: #000;
     color: #fff;
@@ -280,11 +274,13 @@ footer {
     text-align: center;
     margin-top: 50px;
 }
+
 .contact-info {
     font-size: 1rem;
-    color:grey;
+    color: grey;
     margin-right: 100px;
-  }
+}
+
 .contact-content {
     max-width: 600px;
     margin: 0 auto;
@@ -301,7 +297,6 @@ footer {
     flex-direction: column;
     gap: 15px;
 }
-
 
 .contact-form input,
 .contact-form textarea {
@@ -324,24 +319,13 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 83%;
-    
-
 }
 
 .contact-form button:hover {
     background-color: saddlebrown;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .contact h2 {
-        font-size: 2em;
-    }
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 0.9em;
-    }
-}
+/* Footer styling */
 .footer {
     background-color: #1e1e1e;
     color: #fff;
@@ -386,217 +370,9 @@ footer {
     color: #ff9800;
 }
 
-@media (max-width: 768px) {
-    .footer-content {
-        padding: 0 10px;
-    }
-    .social-links {
-        flex-direction: column;
-    }
-}
-/* Existing Styles Above */
+/* Media Queries for Responsive Design */
 
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-    /* Tablet and small laptop adjustments */
-    .header {
-        padding: 15px 30px;
-    }
-
-    .home-content {
-        padding: 20px;
-    }
-
-    .features {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .feature {
-        max-width: 100%;
-    }
-
-    .about-flex-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-flex-container p {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-    }
-
-    .contact h2 {
-        font-size: 2.2em;
-    }
-}
-
-@media (max-width: 768px) {
-    /* Mobile adjustments */
-    .header {
-        flex-direction: column;
-        padding: 10px 20px;
-        align-items: flex-start;
-    }
-
-    nav .nav-links {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .cta {
-        margin-right: 0;
-        margin-top: 10px;
-    }
-
-    .home h2 {
-        font-size: 2em;
-    }
-
-    .home p {
-        font-size: 1em;
-    }
-
-    .about h2 {
-        font-size: 2em;
-    }
-
-    .about-flex-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-image img {
-        height: auto;
-    }
-
-    .menu-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu-item {
-        width: 100%;
-    }
-
-    .contact h2 {
-        font-size: 1.8em;
-    }
-
-    .contact-form button {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Small mobile adjustments */
-    .header {
-        padding: 10px 15px;
-    }
-
-    .home h2 {
-        font-size: 1.8em;
-    }
-
-    .home p {
-        font-size: 0.9em;
-    }
-
-    .features {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .feature {
-        max-width: 100%;
-        padding: 15px;
-    }
-
-    .menu-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu-item {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .about h2 {
-        font-size: 1.8em;
-    }
-
-    .contact h2 {
-        font-size: 1.5em;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 0.9em;
-    }
-}
-/* Your existing CSS styles */
-
-/* Add this to handle the hamburger menu */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #1e1e1e;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.burger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    transition: all 0.3s;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-}
-
-nav .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav .nav-links li {
-    margin: 0 10px;
-}
-
-nav .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1em;
-    transition: color 0.3s;
-}
-
-nav .nav-links a:hover {
-    color: #ff9800;
-}
-
-/* Media Queries for Burger Menu */
+/* Burger Menu for Mobile */
 @media (max-width: 768px) {
     .header {
         justify-content: space-between;
@@ -635,17 +411,16 @@ nav .nav-links a:hover {
     .nav-links.active {
         display: flex;
     }
-}
 
-/* Responsive adjustments for about and menu section */
-@media (max-width: 768px) {
+    /* Responsive About Section */
     .about-flex-container {
         flex-direction: column;
         text-align: center;
     }
 
-    .menu-container {
-        flex-direction: column;
-        align-items: center;
+    .about-flex-container p {
+        margin-bottom: 20px;
+        margin-right: 0;
     }
 }
+
